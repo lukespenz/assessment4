@@ -38,8 +38,9 @@ function createVisionCard(vision) {
   visionCard.classList.add("vision-card");
 
   visionCard.innerHTML = `<img alt='vision cover' src=${vision.imageURL} class="vision-cover"/>
-  <p class="vision-title">${vision.title}</p>
-  <button onclick="deletevision(${vision.id})">delete</button>`;
+  <p class="visionGoal">${vision.goal}</p>
+  <p class="visionProgress">${vision.progress}</p>
+  <button onclick="deleteVision(${vision.id})">delete</button>`;
 
   visionsContainer.appendChild(visionCard);
 }
